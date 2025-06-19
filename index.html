@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos - Modern Interactive Website</title>
+    <meta name="description" content="A modern, fully responsive website with interactive features and dark mode support">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+                <div class="loader-ring"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Lumos</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#customers" class="nav-link">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle ripple-btn" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-on-scroll">
+                Welcome to the <span class="gradient-text">Future</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Experience modern web design with cutting-edge features and seamless interactions
+            </p>
+            <div class="hero-buttons animate-on-scroll">
+                <button class="btn btn-primary ripple-btn">Get Started</button>
+                <button class="btn btn-secondary ripple-btn">Learn More</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Image Carousel Section -->
+    <section class="carousel-section parallax-container">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Gallery</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="image-carousel">
+                    <div class="carousel-item active">
+                        <div class="carousel-image" style="background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="carousel-content">
+                            <h3>Modern Design</h3>
+                            <p>Beautiful and responsive layouts</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="carousel-content">
+                            <h3>Interactive Features</h3>
+                            <p>Engaging user experiences</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image" style="background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%), url('your-image.jpg') center/cover no-repeat;;"></div>
+                        <div class="carousel-content">
+                            <h3>Performance Optimized</h3>
+                            <p>Fast loading and smooth animations</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image" style="background: linear-gradient(45deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <div class="carousel-content">
+                            <h3>Cross Platform</h3>
+                            <p>Works perfectly on all devices</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn-prev" id="carousel-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-btn-next" id="carousel-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features parallax-container">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Amazing Features</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="0">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Fully Responsive</h3>
+                    <p>Perfect display on all devices from mobile to desktop</p>
+                </div>
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Dark Mode</h3>
+                    <p>Toggle between light and dark themes seamlessly</p>
+                </div>
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Performance</h3>
+                    <p>Optimized for speed and smooth user experience</p>
+                </div>
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure</h3>
+                    <p>Built with security best practices in mind</p>
+                </div>
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Customizable</h3>
+                    <p>Easy to customize and extend functionality</p>
+                </div>
+                <div class="feature-card animate-on-scroll ripple-container" data-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>User Friendly</h3>
+                    <p>Intuitive interface designed for great UX</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Work</h2>
+            <div class="portfolio-filter animate-on-scroll">
+                <button class="filter-btn active ripple-btn" data-filter="all">All</button>
+                <button class="filter-btn ripple-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn ripple-btn" data-filter="app">Mobile Apps</button>
+                <button class="filter-btn ripple-btn" data-filter="graphic">Graphics</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll" data-category="web">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Modern online shopping experience</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="app">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile Banking App</h3>
+                            <p>Secure and user-friendly banking</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="graphic">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Complete visual brand design</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="web">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #43e97b 0%, #38f9d7 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>Corporate Website</h3>
+                            <p>Professional business presence</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="app">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #fa709a 0%, #fee140 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>Social Media App</h3>
+                            <p>Connect and share with friends</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-on-scroll" data-category="graphic">
+                    <div class="portfolio-image" style="background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="portfolio-overlay">
+                            <h3>Print Design</h3>
+                            <p>Beautiful print materials</p>
+                            <button class="btn btn-primary ripple-btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials parallax-container">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll" data-delay="0">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Exceptional work! The team delivered a stunning website that exceeded our expectations. The attention to detail and user experience is remarkable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-delay="200">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Professional, responsive, and creative. Our new website has significantly improved our online presence and customer engagement."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Marketing Director, GrowthCorp</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll" data-delay="400">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The mobile experience is flawless! Our customers love the new design and the site performs beautifully on all devices."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" style="background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <span>Founder, Creative Studios</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section id="customers" class="customers">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Trusted by Leading Companies</h2>
+            <div class="customers-grid">
+                <div class="customer-logo animate-on-scroll" data-delay="0">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-building"></i>
+                        <span>TechCorp</span>
+                    </div>
+                </div>
+                <div class="customer-logo animate-on-scroll" data-delay="100">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-rocket"></i>
+                        <span>StartupX</span>
+                    </div>
+                </div>
+                <div class="customer-logo animate-on-scroll" data-delay="200">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-globe"></i>
+                        <span>GlobalTech</span>
+                    </div>
+                </div>
+                <div class="customer-logo animate-on-scroll" data-delay="300">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-leaf"></i>
+                        <span>EcoSolutions</span>
+                    </div>
+                </div>
+                <div class="customer-logo animate-on-scroll" data-delay="400">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-heart"></i>
+                        <span>HealthPlus</span>
+                    </div>
+                </div>
+                <div class="customer-logo animate-on-scroll" data-delay="500">
+                    <div class="logo-placeholder" style="background: linear-gradient(45deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>EduTech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact parallax-container">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Let's Start a Conversation</h3>
+                    <p>Ready to transform your digital presence? We'd love to hear about your project and help bring your vision to life.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@modernweb.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Innovation Street, Tech City</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ModernWeb</h3>
+                    <p>Creating beautiful, responsive, and interactive web experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link ripple-btn"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ModernWeb. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h3>Welcome to ModernWeb!</h3>
+            <p>Discover the power of modern web design with our interactive features and responsive layouts.</p>
+            <button class="btn btn-primary ripple-btn" id="popup-cta">Explore Features</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
