@@ -30,19 +30,11 @@ The project was developed using **HTML**, **CSS**, and **JavaScript**, powered b
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project on Netlify / Vercel / GitHub Pages](#)  
-_Replace with your deployed URL_
+🔗 [View Live Project on GitHub Pages](https://prasad1-s.github.io/UI-UX-hackathon-project/)  
 
 ## 📂 Source Code
 
-🔗 [GitHub Repository](#)  
-_Replace with your public repository URL_
-
-## 🕒 Submission Information
-
-- **Date**: June 19, 2025  
-- **Time**: Submitted before 6:00 PM IST  
-- **Event**: Frontend Battle 2.0 - Round 1  
+🔗 [GitHub Repository](https://github.com/Prasad1-S/UI-UX-hackathon-project)  
 
 ## 📁 Project Structure
 
